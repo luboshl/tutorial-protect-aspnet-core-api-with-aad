@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "c7fb851c-073b-4aa7-868e-afa615a35ce2",
+		"name": "Unathorized",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:3001/api/employees",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:3001/api/employees/0c742db0-ef36-416a-8364-69c4142dad12",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"employees",
+						"0c742db0-ef36-416a-8364-69c4142dad12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"Stacey\",\n    \"lastName\": \"Tyer\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:3001/api/employees",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE employee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"0c742db0-ef36-416a-8364-69c4142dad12\",\n    \"firstName\": \"Jennifer\",\n    \"lastName\": \"Smith\"\n}"
+				},
+				"url": {
+					"raw": "https://localhost:3001/api/employees/0c742db0-ef36-416a-8364-69c4142dad12",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"employees",
+						"0c742db0-ef36-416a-8364-69c4142dad12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE employee",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:3001/api/employees/86092b43-ffc5-4947-a850-ae890649606d",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"employees",
+						"86092b43-ffc5-4947-a850-ae890649606d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
